@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "seed": 20260303,
+    "num_dh_sets": 20,
+    "samples_per_dh": 5,
+    "total_cases": 100,
+    "root_solver": "matrix_polynomial_pencil",
+    "cases_with_solution": 100,
+    "cases_with_accepted_solution": 100,
+    "acceptance_rate": 1.0000000000,
+    "ik_time_total_sec": 0.1585033000,
+    "ik_time_mean_sec": 0.0015850330,
+    "ik_time_median_sec": 0.0015700000,
+    "ik_time_p90_sec": 0.0019234500,
+    "ik_time_p95_sec": 0.0020457500,
+    "ik_time_max_sec": 0.0022690000,
+    "solutions_per_case_mean": 3.5700000000,
+    "real_solutions_per_case_mean": 3.5700000000,
+    "poly_real_roots_per_case_mean": 3.7400000000,
+    "stage_matrix_construction_mean_sec": 0.0000242650,
+    "stage_poly_derivation_mean_sec": 0.0000021580,
+    "stage_poly_solve_mean_sec": 0.0005868440,
+    "stage_back_substitution_mean_sec": 0.0001975580
+  }
+}

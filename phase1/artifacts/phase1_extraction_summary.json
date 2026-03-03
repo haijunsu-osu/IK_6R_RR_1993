@@ -1,0 +1,32 @@
+[
+  {
+    "pdf": "RaghavanRoth6R1993.pdf",
+    "pages": 7,
+    "ocr_pages": 0,
+    "direct_pages": 7,
+    "total_chars": 37244,
+    "total_equation_lines": 403,
+    "markdown_artifact": "phase1\\artifacts\\RaghavanRoth6R1993_extracted.md",
+    "equations_artifact": "phase1\\artifacts\\RaghavanRoth6R1993_equations.md"
+  },
+  {
+    "pdf": "MCtra94.pdf",
+    "pages": 10,
+    "ocr_pages": 10,
+    "direct_pages": 0,
+    "total_chars": 45105,
+    "total_equation_lines": 382,
+    "markdown_artifact": "phase1\\artifacts\\MCtra94_extracted.md",
+    "equations_artifact": "phase1\\artifacts\\MCtra94_equations.md"
+  },
+  {
+    "pdf": "A_Robot_Manipulator_With_16_Real_Inverse_Kinematic.pdf",
+    "pages": 7,
+    "ocr_pages": 0,
+    "direct_pages": 7,
+    "total_chars": 618,
+    "total_equation_lines": 1,
+    "markdown_artifact": "phase1\\artifacts\\A_Robot_Manipulator_With_16_Real_Inverse_Kinematic_extracted.md",
+    "equations_artifact": "phase1\\artifacts\\A_Robot_Manipulator_With_16_Real_Inverse_Kinematic_equations.md"
+  }
+]

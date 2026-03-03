@@ -1,0 +1,44 @@
+[
+  {
+    "page": 1,
+    "method": "direct",
+    "chars": 5641,
+    "equation_lines": 28
+  },
+  {
+    "page": 2,
+    "method": "direct",
+    "chars": 4630,
+    "equation_lines": 49
+  },
+  {
+    "page": 3,
+    "method": "direct",
+    "chars": 3637,
+    "equation_lines": 81
+  },
+  {
+    "page": 4,
+    "method": "direct",
+    "chars": 4590,
+    "equation_lines": 61
+  },
+  {
+    "page": 5,
+    "method": "direct",
+    "chars": 8024,
+    "equation_lines": 42
+  },
+  {
+    "page": 6,
+    "method": "direct",
+    "chars": 6880,
+    "equation_lines": 38
+  },
+  {
+    "page": 7,
+    "method": "direct",
+    "chars": 3842,
+    "equation_lines": 104
+  }
+]

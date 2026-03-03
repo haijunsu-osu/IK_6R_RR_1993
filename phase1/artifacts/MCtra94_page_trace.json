@@ -1,0 +1,62 @@
+[
+  {
+    "page": 1,
+    "method": "ocr_sidecar",
+    "chars": 5532,
+    "equation_lines": 13
+  },
+  {
+    "page": 2,
+    "method": "ocr_sidecar",
+    "chars": 5553,
+    "equation_lines": 38
+  },
+  {
+    "page": 3,
+    "method": "ocr_sidecar",
+    "chars": 3823,
+    "equation_lines": 56
+  },
+  {
+    "page": 4,
+    "method": "ocr_sidecar",
+    "chars": 3997,
+    "equation_lines": 42
+  },
+  {
+    "page": 5,
+    "method": "ocr_sidecar",
+    "chars": 4839,
+    "equation_lines": 56
+  },
+  {
+    "page": 6,
+    "method": "ocr_sidecar",
+    "chars": 3569,
+    "equation_lines": 54
+  },
+  {
+    "page": 7,
+    "method": "ocr_sidecar",
+    "chars": 4722,
+    "equation_lines": 52
+  },
+  {
+    "page": 8,
+    "method": "ocr_sidecar",
+    "chars": 3776,
+    "equation_lines": 18
+  },
+  {
+    "page": 9,
+    "method": "ocr_sidecar",
+    "chars": 5006,
+    "equation_lines": 41
+  },
+  {
+    "page": 10,
+    "method": "ocr_sidecar",
+    "chars": 4288,
+    "equation_lines": 12
+  }
+]

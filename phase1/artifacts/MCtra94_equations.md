@@ -1,0 +1,413 @@
+# Equation Candidates: MCtra94.pdf
+
+## Page 1
+
+- univariate polynomial.However,the polynomial is expressed as a
+- matrix determinant and its roots are computed by reducing to an
+- At the same time,we feel it is important that the solution be
+- eigenvalueproblem.The other roots of the multivariate system
+- are obtained by computing eigenvectors and substitution.The
+- algorithm involves symbolic preprocessing,matrix computations
+- specifications [16], [17]. Given the kinematic requirements as
+- tions [8], [25]. However, a practical solution for the inverse
+- N00014-941-0738,a NSF Grant CCR-9319957,ARPA Contract DABT63-
+- Investigator Award (# IRI-8958577).
+- includes that of Pieper [18] and Roth et al.[22]. The first
+- formof determinant of a12×12matrix,whose entries were
+- quarticpolynomialsinthe tangentof thehalf-angleof one of
+
+## Page 2
+
+- the joint variables. Later [5] provided a 32 degree polynomial
+- in the tangent of the half-angle of one of the joint variables.In Section II, we review the inverse kinematics problem
+- polynomials. Section Il introduces matrix polynomials and
+- numericallyusing polynomial continuation.This isin contrast
+- ofnon-linearpolynomialequations.InSectionIVwediscuss
+- with the earlier approaches, where a single polynomial in the
+- tangent of the half-space of one of the joint variables was
+- the 32 degree polynomial in [5] have purely imaginary parts.In Section VI we discuss extensions of the algorithm to general
+- Finally,[9], [10] gave the exact solution in lower dimensions serial manipulators.A preliminary version of this paper had
+- by reducing the problem to a 16 degree polynomial. More appeared in [13].
+- recently, [20], [21] used dialytic elimination to derive a 16
+- degreepolynomialinthetangentofthehalf-angleofajoint
+- variable. In [18], [15], examples of a 6R manipulator and
+- We use Denavit-Hartenberg formalism,[4], to model a 6R
+- of computingrootsof polynomials ofdegree16 canbeill-
+- system attached to the ith link is numbered . More details of
+- on an average of CPU time on an IBM 370 - 3090 using
+- the model aregivenin[23],[24].The 4× 4 transformation
+- matrix relating +1 coordinate system to coordinate system
+- deriving a univariate polynomial and matrix computations.
+- used along with the formulations given in [1],[9]. The main
+- s;=sinθ,C=cosθ,0;is the ith joint rotation angle,
+- contributionofouralgorithmliesinthefactthatweusematrix
+- operations and reduce the problem to an eigenvalue problem as
+- opposed to finding roots. These matrix operations correspond
+- μi = sinαi, 入 = coso， Q:twist angle,
+- to manipulating matrix polynomials,constructing equivalent
+- companion matrices and computing their eigendecomposition.
+- @ : length of link i + 1, d : offset distance at joint i.
+- numericalstability.The algorithmsfor computingeigenvalues
+- andeigenvectorsofamatrixarebackwardstable'andfast
+- ages [2], [7]. This is in contrast with expanding a symbolic
+- determinant to compute a degree 16polynomial and thereby,
+- computing its roots. For almost all instances of the problem
+- we are able to compute accurate solutions using 64 bit IEEE
+- IAn eigendecomposition algorithm is backward stable if it computes the
+- exact eigendecomposition of a slightly perturbed matrix.
+- A1A2A3A4AsA6 = Ahand.
+
+## Page 3
+
+- The left hand side entries of the matrix equation given aboveisrepresented as:
+- are functions of the sines and cosines of the joint angles.
+- Furthermore,this matrix equation corresponds to 12 scalar
+- equations. Since the matrix formed by the first 3 rows and 3
+- =0
+- C405
+- scribedbyRaghavan andRoth[20].Theyreduce themul-
+- tivariate system to a degree 16 polynomial in tan(), such
+- where Ajis a3×3matrix andois the 3×3null
+- matrix. The entries of Aij are quadratic polynomial in 3.
+- Let us represent the left hand side 12 × 12 matrix by ∑. Its
+- Raghavan and Roth rearrange the matrix equation, (2),as
+- determinant is a polynomial of degree 24 in c3.It turns out
+- that (1 + c2)4 divides the determinant and the rest of the 16
+- A3A4A5=A²A-²AhandA1.
+- this formulation and the non-linear eigenvalue problem. Given
+- As a result the entries of theleft hand side matrix arefunctions
+- of 03,04 and 05 and the entries of the right hand side matrix
+- II.MATRIX POLYNOMIALS
+- On equating the corresponding entries of the matrix equation,
+- In this section,we review some literature on matrix polyno-
+- mials and present techniquestosolve the non-linear eigenvalue
+- the matrix-valued function defined by
+- /S1S2
+- S4C5
+- L(X)=E=oAix²
+- 81C2
+- C182
+- C485
+- C4C5
+- is called a matrix polynomial of degree k.When Ak = I, the
+- C1C2
+- = (P)
+- identity matrix, the matrix polynomial is said to be monic.
+- C4
+- More details on matrix polynomials and their properties are
+- C1
+- given in [6]. In our application we will be dealing with matrix
+- C5
+- polynomials in the context of solving non-linear polynomial
+- C2
+- equations (as shown in (5)). Our main interest is in finding
+- roots of the polynomial equation
+- where Q is a 14 x 8 matrix, whose entries are functions of the
+- P(X) = Determinant(L(x)) = 0.
+- P is a 14 x 9 matrix, whose entries are linear functions of s3
+- Asimple solution to thisproblemisexpand the determinant
+- and c3 and their coefficients are functions of the manipulator and compute the roots of the resulting polynomial. However,
+- Let us consider the case when A is a non-singular and well
+- conditioned matrix.As a result computation of A1 does not
+- sintroduceseverenumericalerrors.Let
+- L(X) = AL(X), and A= AAi，0 ≤i<k.
+- L(X) is a monic matrix polynomial. Its determinant has the
+- same roots as that ofP(入).Let入=入obea root of the
+- where c=tan(),and taking power products,the system
+- Determinant(L(x)) = 0.
+
+## Page 4
+
+- As a result L(Xo) is a singular matrix and there is at least mk and therefore, has mk eigenvalues. Thus, all the roots of
+- one non trivial vector in its kernel. Let us denote that m x 1 P(X) correspond to the eigenvalues of C.
+- The matrix polynomials have been used to solve general
+- L(入o)v = 0,
+- systems of non-linear polynomial equations.More details are
+- given in [11],[12]. The relationship between the eigenvalues
+- of C and the roots of P(X)has also been proved using
+- Theorem 1: Given the matrix polynomial, L(X) the roots
+- of the polynomial corresponding to its determinant are the
+- matrix Akis singular or close to being singular(due to high
+- eigenvalues of the matrix
+- problemtoaneigenvalueproblem usinglinear transformations
+- (explained in detailinSectionIV-C).However,this technique
+- C=
+- problem to a generalized eigenvalue problem.
+- Theorem 2: Given the matrix polynomial, L(X) the roots
+- of the polynomial corresponding to its determinant are the
+- eigenvalues of the generalized system CX-C2, where
+- tively.Furthermore, the eigenvectors of C corresponding to
+- the eigenvalue 入= Xo are of the form:
+- [ou入u...-]T
+- Proof:The eigenvalues of C correspond to the roots of
+- Determinant(C - sI) = 0.
+- C2=
+- C is a matrix of order mk. Let s = so be an eigenvalue of
+- V=[...]
+- In this section we describe our algorithm in detail. The
+- 0s=
+- in [20]. However, we perform symbolic preprocessing and
+- lators we perform symbolic preprocessing for simplifica-
+- U2=S0U1；U3=S0U2;·..Uk=S0Uk-1
+- μi's and the entries of the right hand side matrix Ahand
+- -Aou1-A1u2-A203 -..-Ak-1Uk= s0Uk.
+- as symbolic constants. As a result, express the entries
+- of the14x9matrixPand14 × 8matrixQ,as
+- constants. Many geometric properties of manipulators
+- -(Ao + soA1+ sA2 +..·+ s-1Ak-1 + sIk)1 = 0.
+- and is performed using the properties highlighted in
+- is a solution of L(X)= O and v1 is a vector in the kermel of
+- L(so) = 0. Thus, every eigenvalue of C is a root of P(X).
+- Since the leading matrix of L(X) is non-singular, P(X) is a
+- polynomialof degreemk.Furthermore,Cisamatrixoforder
+
+## Page 5
+
+- correspondingtothelinklengths,offsetdistancesand
+- The matrix Q has a special structure.In particular many of
+- 3)Numerical Conditioning: Compute the rank of Q using
+- SVD(singular value decomposition).If Q has rank 8
+- 84C5
+- C4S5
+- (@)(a) =(P)]
+- C4C5
+- pose of the end-effector[23].
+- 1C5
+- 84C5
+- minor of maximum rank of Q and using that minor to
+- C485
+- S1C2
+- C4C5
+- C182
+- = (P2)
+- C1C2
+- obtain a matrix∑.The actual number of rows inE is
+- C4
+- equal to R =(14-rank(Q))≥6.Take any of the 6 rows
+- of ∑ (among R) and substitute for sines and cosines of
+- C5
+- 03,04 and 0s in terms of c3, C4 and T5, respectively. In
+- where Q1,Q2,P1,P2 are 6x 2,8x6,6x 9,8x 9 matrices,
+- 6)ReductiontoEigenvalueProblem:Reduce theproblem
+- of computing roots of Determinant(E）= 0 to an
+- eigenvalue problem. The eigenvalues of the resulting
+- 24 × 24 matrix correspond to the root,23 and the
+- correspondingeigenvectors areusedtocompute the
+- The symbolic preprocessing is performed offline. Given the
+- and(3)tocomputethejointangles01,02and06.
+- The algorithm also involves clustering eigenvalues to
+- accuratelycomputeeigenvalues ofmultiplicitygreater
+- substitute theai's,di's,入;'sand μi'sintothefunctionsused
+- generalizedeigenvalueproblem.
+- under pre-processing computation. Given the pose of the
+- of the eigenvalues.In case the condition number is
+- We use singular value decompositions to compute the ranks
+- of Q1 and Q2 [7]. The singular vectors obtained are also used
+- Thesesteps areexplainedindetailinthefollowingsections.
+- to eliminate 01 and 02 from (10) and (11). In particular, let
+- the singular value decomposition of Q1 be expressed as:
+- A.Symbolic Preprocessing
+- √=UE'vT
+- The algorithm performs symbolic preprocessing for the
+- parameters and the entries of Ahand as symbolic constants.
+- respectively. Initially we compute the singular values, 01,02
+- These symbolic constants along with thevariables 0;are
+- of Q.If both the singular values are non-zero,Q has full
+- erank and let Q = Q. If either of the singular values, o is
+- =
+- Q as polynomial functions of the symbolic constants. In the
+- case of P,each entry is of the form βsin(03)+ rcos(03)+ 8，where e is a user defined constant to test the rank deficiency
+- whereβ. and8 are functions of the symbolic constants.
+- of the matrix.Furthermorewe compute the elements ofUand
+
+## Page 6
+
+- is singular,its condition number is infinity. Let us consider
+- Q ==10kUiVjk.
+- the case,when the matrix A is well conditioned. We take the
+- matrix equation, (14), and multiply it by A-1. Let
+- ∑= Ix² + A-B3+ A-C.
+- decrease the rank of the matrix. It turns out that this property
+- matrix M of the form
+- /84S5
+- -A-C-A-B
+- S4C5
+- It follows from the structure of M that the eigenvalues of
+- C485
+- (@)(a)=(P)
+- M correspond exactly to the roots of Determinant(E)= 0.
+- C4C5
+- Furthermore, the eigenvectors of M, corresponding to the
+- S4
+- eigenvaluecghave the structure
+- C5
+- Thus, the eigenvectors of M can be used to compute the roots
+- 0.1 or 2, we obtain 6.5 or 4 equations, respectively, in sines
+- Inmanyinstances the matrix Ain(14)maybeill-
+- and cosines of 04,05.
+- sentedin(1l).Incaseeitherof thesingularvaluesisclose
+- 3=tan(） o.Therefore,A is nearly singular.We
+- to 0.0,we recompute the matrix Q2 from the singular value
+- take the matrix equation, (14), and reduce it to a generalized
+- decomposition of Q2. Otherwise Q2 = Q2.The modified
+- eigenvalue problemby constructing twomatrices,M1and M2
+- matrix is used in eliminating 01,02 from (11).Depending on
+- M=
+- spectively. Furthermore, the roots of Determinant (E）=
+- C.ReductiontoEigenvalueProblem
+- 0,correspond exactly to the eigenvalues of the generalized
+- eigenvalue problem M1-t3M2,according to Theorem 2.
+- eigenvalue problem.Moreover,we exploit the structure of the
+- The eigenvectors have the same structure as (15).
+- resulting matrix for efficiently computing its eigenvalues.
+- Computing the eigendecomposition of a generalized eigen-
+- We are given a 12 × 12 matrix,∑,whose entries are
+- value problem is costlier than theeigenvalue problemby
+- quadratic polynomials in c3.Our problem is to solve the
+- linear transformation andreduce the problem to an eigenvalue
+- C3=
+- E=
+- E=(a²A+ac B+c²C)²+(2ab A+
+- C4C5
+- (ad + bc) B + 2cd C)3 + (b² A+ bd B+ d² C).
+- Let A = α² A+ ac B+ c2 C. In most cases A is well
+- We express the matrix as
+- =Ax+Br3+C
+- is a singular pencil.A,B.C may have common singular
+- where A.B and C are 12x12 matrices consisting of numerical pencils. In the latter case, A is ill conditioned for all choices
+- entries.We compute the condition number of A.If the matrixof a,b,c,d.
+
+## Page 7
+
+- We try this transformations fora few choices ofa,b,c,d andC.Eigenvector Computation
+- compute the condition number of A. The cost of estimating
+- The eigenvector corresponding to a real eigenvalue is com-
+- eigendecomposition of the matrix.If Ais well conditioned,
+- eigenvectorV,we use its structure,(15),to accurately compute
+- solve for Determinant(E1）= 0 by reducing it to an eigen-
+- 24 and c5 from it.However, due to floating point errors each
+- component of the eigenvector undergoes a slight perturbation.
+- compute t3. The eigenvectors have the same structure as (15),
+- except that c3 is replaced by T3.
+- C4 and c5. Given the eigenvector V, let
+- U1=
+- matrix operations[2].Theseroutines are availableinFortran
+- algorithmsformatrix computations havebeen specialized to
+- 0is low. 24 and c5 can be computed from v1 by solving for
+- our application.The details aregivenbelow.
+- A.Eigendecomposition
+- finding to an eigenvalue problem. The 24 × 24 matrix,M,
+- has 24 eigenvalues. However, following the properties of the
+- symbolicformulation in[20],8of the eigenvalues correspond
+- 1=
+- to the roots of the polynomial (1 + α3)4 = 0. In other words,
+- Land-t are eigenvalues of Mof multiplicity 4 each,where
+- ↓= √-1. If we transform the variable 3, as shown in (16),
+- theseeigenvaluesare suitablytransformed.Wemakeuse the
+- structure ofMalongwiththeQRalgorithmforeigenvalue
+- t01. Initially, we decide whether|24 |≥ 1 or | x4 |< 1 by
+- algorithm toreduce theproblem to computing theeigenvalues
+- of a 16× 16 matrix.
+- is perforimed for determining the magnitude of zs. Depending
+- magnitude such that their ratios correspond to T4 and c5.As
+- B.ClusteringEigenvalues
+- Inmany instances the solution has a root of multiplicity
+- D.Computing All JointAngles
+- a singular configuration.As such the problem of computing
+- Given a triple(c3,4,5） corresponding to a solution of the
+- multiple roots of polynomial equations can be ill-conditioned.
+- 12 equations represented as the 12 × 12 matrix ∑, as shown
+- In other words the condition numbers for such eigenvalues
+- angles. Given the values of s3,C3, 84,C4,85,C5, solve for the
+- most instances of the problem,we have noticed that there is a
+- unknowns s1,C1 based on the linear relationship shown in
+- C3 = α be a root of multiplicity k of the given equation.
+- (10).Similarly solve the linear system(11) for theunknowns
+- $2, C2. These five joints angles, 01,.·., 05 are substituted into
+- Moreover,↑α -α|may be relatively high.Let Qm =
+- With each eigenvalue,we have the knowledge of its con-
+- each of the perturbed eigenvalues, Q, can be ill-conditioned;
+- however,the arithmetic mean of the perturbed eigenvalues,solution. If we desire further accuracy,we use these solutions
+- Qm is well-conditioned [3].We actually verify the accuracyas start points for Newton's iterations on the algebraic equa-
+- Itionsobtained from(2).Inmostinstances wehavebeen able
+- of the eigenvalue and the condition number of a cluster of
+
+## Page 8
+
+- Q2=
+- The entries of P1 and P2 are functions of s3 and c3.P1 is
+- an 6 × 9 matrix,
+- =d
+- c3+
+- particular, we used it on 21 problem instances given in [26]
+- can be accurately solved using double precision arithmetic.
+- time is spent in the QR algorithms for computing the eigen-
+- foreigendecompositioncanimprovetherunningtimeeven
+- onds on the IBM RS/6000.In these instances the matrices
+- A,B.C in (14) are ill-conditioned and have singular pencils.
+- eigenvalue problem,which slows down the algorithm.
+- Similarly, P2 is a 8 × 9 matrix
+- P2=
+- by the matrix
+- Ahand =
+- s3+
+- Q=
+
+## Page 9
+
+- EIGENVALUES AND THEIR CONDITION NUMBERS
+- Eigenvalue
+- The matrices Q1and Q2have no singular values close to
+- after numerical elimination we obtain a 6 x 9 matrix ∑. is
+- convertedintoamatrixpolynomialusing the transformation
+- of the matrix structures [14].The joints may be prismatic
+- T3 = tan(） and obtaining the 12 × 12 matrix E",expressed
+- asamatrixpolynomialint3.Theestimatedconditionnumber
+- of the leading matrix is 5000.0.2 As a result, we reduce it
+- to an eigenvalue problem of a 24 × 24 square matrix. The
+- finding roots of a univariate polynomial [21]. It involves taking
+- eigenvalues are computed using LAPACK routines.The real
+- suitableminors of matrix andreduction toan eigenvalue
+- eigenvalues and their condition numbers are given in Table I1.
+- Thus, we see that all the 16 eigenvalues are real. Fur-
+- Thisfollowsfromthefactthatthemachineconstantfor
+- result, the eigenvalues have a relative error bounded by 10-15
+- rithmsperforms symbolicpreprocessing,matrixcomputations
+- Giventheeigenvalues,therestofthealgorithminvolves
+- and reduces the problem to computing the eigendecomposition
+- computation of rest of the corresponding eigenvectors and
+- of a matrix. The numerical accuracy of the operations used
+- joint angles.Let's illustrate the process for the first eigenvalue,
+- in the algorithm is well understood.For most instances of
+- T3 = 3679.99. As a result,
+- the problem the solution can be accurately computed using
+- s3=0.00054348,
+- c3=-0.999999.
+- a variety of instances and the average running time is 11 ms
+- Since |z3|>1,we make v1 equal to the last 12 elements of
+- V the eigenvector, as shown in (18).Analyzing the elements
+- of v1 results in 丨c4 |< 1 and|c5 < 1. Elements of
+- maximum magnitude of v1 areused to compute T4 and c5
+- to the best possible accuracy. It results in 24 = 0.34907 and
+- 5 = 0.49368. These are used to compute s1,s2,cl,c2,s6,c6
+- matrix computations.
+- Given the sines and cosines of the joint angles, s; and Ci,
+- their accuracy is improved by using a few iterations of the
+- 2In practicewe have been ableto linearizematrixpolynomials withleading
+- matrices of condition number up to1e05 to eigenvalue problems.
+- nonsymmetric eigenproblem:Theory and software,"Computer Science
+
+## Page 10
+
+- [4]J. Denavit and R. S. Hartenberg,“A kinematic notation for lower-pair
+- [6]1. Gohberg,P.Lancaster,and L.Rodman,Matrix Polynomials.New
+- [7]G.H. Golub and C.F.Van Loan,Matrix Computations.Baltimore,
+- general six and five-degree-of-freedommanipulators by continuation
+- [25] W.K. Veitschegger and C. Wu,"A method for calibrating and com-
+- usinga generic-case solution methodology,”MechanismsMach.Theory.
+- [27]J. H.Wilkinson,“The evaluation of the zeros of ill-conditioned polyno-
+- [28]J. H.Wilkinson,The algebraic eigenvalue problem.Oxford:Oxford
+- [12]D.Manocha,Solving systems of polynomial equations,IEEE Comput.
+- 1992. He is currently an assistant professor of com-
+- Ph.D. thesis,Stanford University，1968.
+- [19]E. J. F. Primrose, “On the input-output equation of the general 7R-
