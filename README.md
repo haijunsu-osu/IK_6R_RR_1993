@@ -1,7 +1,10 @@
 # RR1993 General 6R IK Benchmark (Prompt Workspace)
 
+Prof. Hai-Jun Su's lab project page: [AI Kinematics Tutorial](https://su-idr-lab.github.io/projects/msr_2026_ai_kinematics_tutorial/index.html)
+
 This repository contains a complete 4-phase reconstruction of a general 6R inverse kinematics (IK) pipeline from:
 
+- [2026 ASME IDETC/CIE preprint](2026_ASME_IDETC_AGI.pdf)
 - `RaghavanRoth6R1993.pdf` (resultant/elimination formulation)
 - `MCtra94.pdf` (matrix-polynomial / generalized-eigenvalue root strategy)
 - `A_Robot_Manipulator_With_16_Real_Inverse_Kinematic.pdf` (mandatory validation case)
@@ -213,3 +216,11 @@ It summarizes:
 - stress statistics
 - 16-real-solution case behavior
 - Python-vs-C++ comparison
+
+## Citation
+
+> **Preprint:** [2026 ASME IDETC/CIE preprint](2026_ASME_IDETC_AGI.pdf)
+>
+> Proceedings of the ASME 2026 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (IDETC/CIE 2026), Houston, TX, August 23–26, 2026, Paper No. DETC2026-193961.
+>
+> **Track:** Computers and Information in Engineering.
