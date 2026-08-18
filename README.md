@@ -221,6 +221,6 @@ It summarizes:
 
 > **Preprint:** [2026 ASME IDETC/CIE preprint](2026_ASME_IDETC_AGI.pdf)
 >
-> HJ Su, JM McCarthy, Where we are in the path towards AGI in kinematics Proceedings of the ASME 2026 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (IDETC/CIE 2026), Houston, TX, August 23–26, 2026, Paper No. DETC2026-193961.
+> HJ Su, JM McCarthy, "Where we are in the path towards AGI in kinematics", Proceedings of the ASME 2026 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (IDETC/CIE 2026), Houston, TX, August 23–26, 2026, Paper No. DETC2026-193961.
 >
 > **Track:** Mechanisms and Robotics Conference
